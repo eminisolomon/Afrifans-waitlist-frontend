@@ -4,26 +4,30 @@ import InputField from "../components/input-field";
 
 const Desktop1: NextPage = () => {
   return (
-    <div className="relative bg-white w-full h-[1024px] overflow-hidden text-center text-13xl text-white font-paragraph-text">
-      <div className="absolute top-[0px] left-[0px] bg-secondarycolor-400 w-full sm:w-[1440px] h-[1024px]" />
-      <img
-        className="absolute top-[338px] left-[0px] w-full sm:w-[1578px] h-[764px] object-cover"
-        alt=""
-        src="/worldmappng-1@2x.png"
-      />
-      <div className="absolute top-[238px] left-[10%] sm:left-[510px] text-[96px] text-primarycolor-400 text-left">
-        <span className="font-semibold">Afri</span>
-        <span className="font-extrabold">Fans.</span>
-      </div>
-      <div className="absolute top-[168px] left-[10%] sm:left-[506px] font-semibold">
-        <p className="m-0">The No 1 African’s</p>
-        <p className="m-0">{`most popular 18+ Creators `}</p>
-      </div>
-      <div className="absolute top-[417px] left-[10%] sm:left-[586px] font-semibold">
-        Join the waitlist
-      </div>
+<div className="relative bg-white w-full h-[1024px] overflow-hidden text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white font-paragraph-text">
+  <div className="absolute top-0 left-0 bg-secondarycolor-400 w-full sm:w-[1440px] h-full" />
+  <img
+    className="absolute top-[338px] left-0 w-full sm:w-[1578px] h-[764px] object-cover"
+    alt=""
+    src="/worldmappng-1@2x.png"
+  />
+  <div className="flex flex-col justify-center items-center">
+    <div className="text-lg sm:text-xl md:text-2xl font-semibold text-center mb-6">
+      <p className="m-0">The No 1 African’s</p>
+      <p className="m-0">most popular 18+ Creators</p>
+    </div>
+    <div className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-primarycolor-400 font-semibold text-center mb-8">
+      <span className="font-semibold">Afri</span>
+      <span className="font-extrabold">Fans.</span>
+    </div>
+    <div className="font-semibold text-base sm:text-lg md:text-xl text-center mb-8">
+      Join the waitlist
+    </div>
+    <div className="flex flex-col sm:flex-row">
       <Button1 />
       <InputField />
+    </div>
+  </div>
       <img
         className="absolute top-[595px] left-[10%] sm:left-[48px] rounded-xl w-[30%] sm:w-[153px] h-[153px] object-cover"
         alt=""

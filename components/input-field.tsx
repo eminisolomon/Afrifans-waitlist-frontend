@@ -3,8 +3,9 @@ import { memo } from "react";
 
 const InputField: NextPage = memo(() => {
   return (
-    <div className="absolute top-20 left-10 md:top-[478px] md:left-[330px] rounded-xl bg-white shadow-md box-border w-full md:w-[501px] h-[69px] overflow-hidden flex flex-row py-4 md:py-[30px] pr-10 md:pr-[84px] pl-5 md:pl-[49px] items-center justify-start text-left text-base text-secondarycolor-200 font-paragraph-text border-2 border-secondarycolor-200">
-      <div className="relative font-semibold">Input Field</div>
+    <div className="flex flex-col md:flex-row items-center justify-between absolute top-[478px] left-[5%] md:left-[330px] rounded-xl bg-white shadow-[10px_10px_20px_rgba(0,_0,_0,_0.15)] w-[90%] md:w-[501px] h-[69px] overflow-hidden py-[30px] pr-[6%] pl-[6%] text-base text-secondarycolor-200 font-paragraph-text border-[1px] border-solid border-secondarycolor-200">
+      <label htmlFor="input" className="font-semibold md:mr-4">Input Field</label>
+      <input id="input" type="text" className="w-full bg-transparent outline-none" />
     </div>
   );
 });
