@@ -1,0 +1,1 @@
+# Afrifans-waitlist-frontend
